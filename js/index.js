@@ -38,34 +38,3 @@ $('.nav-item').on('click',function(){
         $('.full-navbar').css('display','none');
     }
 })
-function playVideo(url) {
-    // 新視窗
-    var newWindow = window.open('', '_blank');
-  
-    newWindow.document.write(`
-      <html>
-        <head>
-          <title>视频播放</title>
-          <style>
-            body, html {
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-            }
-            
-            iframe {
-              width: 100%;
-              height: 100%;
-            }
-          </style>
-        </head>
-        <body>
-          <iframe src="${url}" frameborder="0" allowfullscreen></iframe>
-        </body>
-      </html>
-    `);
-  
-    newWindow.onbeforeunload = function() {
-      newWindow.close();
-    };
-  }
