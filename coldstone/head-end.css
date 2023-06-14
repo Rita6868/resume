@@ -1,0 +1,297 @@
+            /* This text is in Century Gothic */
+            
+            body {
+                font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            }
+            
+            .header {
+                max-width: 1712px;
+                padding: 51.5px 12px;
+            }
+            
+            h1 {
+                font-size: 36px;
+                font-weight: bolder;
+            }
+            
+            p,
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .nav-mid {
+                max-width: 620px;
+                width: 100%;
+            }
+            
+            .navbar-nav {
+                display: flex;
+                justify-content: space-between;
+            }
+            /* ----導覽列logo---- */
+            
+            .navbar-brand img {
+                width: 226px;
+            }
+            /* ----導覽列連結---- */
+            
+            .nav-link {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Noto Sans TC";
+                color: #ce2b13!important;
+            }
+            
+            .navbar-nav .nav-link {
+                text-align: center;
+            }
+            /* ----導覽列區塊---- */
+            
+            .navbar {
+                /* box-shadow: 0px 0px 20px rgb(230, 230, 230); */
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            /* ----漢堡條---- */
+            
+            .navbar-toggler {
+                border: none;
+            }
+            
+            .navbar-light .navbar-toggler {
+                color: transparent;
+            }
+            
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(205, 43, 20)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+            }
+            
+            .nav-right {
+                justify-content: center;
+            }
+            /* ----導覽列線---- */
+            
+            .line {
+                display: flex;
+                width: 100%;
+            }
+            
+            .l-line {
+                background-color: #ce2b13;
+                height: 7px;
+                width: 79%;
+            }
+            
+            .r-line {
+                background-color: #e8bb00;
+                height: 7px;
+                width: 21%;
+            }
+            
+            .s {
+                border: none;
+                background-color: transparent;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                padding: 0;
+            }
+            
+            .s-p {
+                padding-left: 10px;
+                margin-right: 25px;
+            }
+            
+            .demarcation {
+                width: 1px;
+                height: 20px;
+                background-color: #000;
+                margin-right: 25px;
+            }
+            
+            .top-icon img {
+                width: 20px;
+                height: 20px;
+                margin: 0 6px;
+            }
+            
+            .nav-right {
+                display: flex;
+            }
+            /* ----footer---- */
+            
+            .footer {
+                background-color: #e3242b;
+                width: 100%;
+                padding-top: 95px;
+                padding-bottom: 95px;
+            }
+            
+            .footer .container {
+                display: flex;
+                /* flex-wrap: wrap; */
+                max-width: 1704px;
+                width: 100%;
+                padding: 0 40px;
+            }
+            
+            .footer-logo {
+                max-width: 100%;
+            }
+            
+            .footer-left,
+            .footer-right {
+                width: 100%;
+            }
+            
+            .up-p {
+                color: #FFF;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+            }
+            
+            .up-p .tel-title {
+                margin-right: 20px;
+            }
+            
+            .up-p .tel {
+                font-weight: bold;
+            }
+            
+            .down-p {
+                color: #FFF;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
+            
+            .down-p a {
+                color: #FFF;
+                text-decoration: none;
+                font-size: 16px;
+                letter-spacing: 2px;
+                padding-right: 20px;
+            }
+            
+            .copyright {
+                font-size: 12px;
+                padding-right: 20px;
+            }
+            
+            .footer .logo-img {
+                width: 251px;
+            }
+            
+            .r-link {
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+            
+            .btn-link button {
+                padding: auto;
+                border: 2px solid #FFF;
+                border-radius: 10px;
+                padding: 7px 30px;
+            }
+            
+            .btn-link a {
+                font-size: 20px;
+                color: #FFF;
+                text-decoration: none;
+            }
+            
+            .follow-us {
+                display: flex;
+                margin-top: 20px;
+                align-items: center;
+            }
+            
+            .follow-us p {
+                color: #FFF;
+                font-size: 16px;
+                font-weight: bold;
+                padding-right: 10px;
+                letter-spacing: 1px;
+            }
+            
+            .follow-us img {
+                padding-left: 15px;
+                width: 51px;
+            }
+            
+            @media screen and (min-width: 1750px) {
+                .footer .container {
+                    padding: 0px;
+                }
+            }
+            
+            @media screen and (max-width: 1200px) {
+                .nav-right {
+                    margin-top: 90px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .top-icon img {
+                    width: 26px;
+                    height: 26px;
+                    margin: 0 12px 30px 12px;
+                }
+                .demarcation {
+                    display: none;
+                }
+                .top-icon {
+                    order: 1;
+                }
+                .search {
+                    order: 2;
+                }
+            }
+            
+            @media screen and (max-width: 1024px) {
+                .footer .container {
+                    flex-direction: column;
+                }
+                .r-link {
+                    align-items: center;
+                }
+                .down-p {
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .up-p {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .footer-logo,
+                .follow-us p {
+                    display: none;
+                }
+                .footer-right,
+                .copyright,
+                .up-p {
+                    margin-bottom: 30px;
+                }
+                .btn-link {
+                    order: 1;
+                }
+                .follow-us {
+                    order: 2;
+                }
+                .footer-left {
+                    order: 3;
+                }
+                .tel-title {
+                    order: 3;
+                }
+                .tel {
+                    order: 4;
+                }
+                .down-p {
+                    order: 5;
+                }
+            }

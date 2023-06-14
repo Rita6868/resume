@@ -1,0 +1,275 @@
+section:nth-child(1) {
+    margin-top: 96px;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 64px;
+}
+
+.contact {
+    margin: 115px auto 0;
+}
+
+section:last-of-type {
+    border-bottom: 0;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.about-left {
+    flex: 1;
+    margin-right: 64px;
+}
+
+.title {
+    position: sticky;
+    top: 96px;
+}
+
+.about-left .title-ch {
+    font-size: 25.5px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.about-left .title-en {
+    font-size: 19.55px;
+}
+
+.about-right {
+    flex: 4;
+    margin-bottom: 64px;
+}
+
+h4 {
+    margin: 34px 0 17px;
+    font-size: 19.55px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #373737;
+}
+
+h5 {
+    margin: 34px 0 17px;
+    font-size: 21.25px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #373737;
+}
+
+.contact-h {
+    font-size: 21.25px;
+    margin: 0 0 16px;
+}
+
+hr {
+    border-bottom: 1px solid #c8c8c8;
+    border-top: 0;
+    margin: 32px 0;
+}
+
+.about-right p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.avator-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avator-item {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    margin-bottom: 48px;
+    font-size: 17px;
+}
+
+.avator-img {
+    width: max(4.427vw, 40px);
+    margin-right: 16px;
+}
+
+.list-ul li {
+    list-style: square;
+    margin-left: 23px;
+}
+
+.list-ul li p {
+    margin-bottom: 0;
+}
+
+.list-ul a {
+    color: #000;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.list-ul b {
+    font-weight: 500;
+    margin-right: -4px;
+}
+
+.exhibition {
+    width: 100%;
+    margin-top: 64.672px;
+}
+
+iframe {
+    height: calc(100vh - 8rem);
+    width: 100%;
+}
+
+h5+.curator {
+    padding-top: 32px;
+}
+
+.curator {
+    display: flex;
+    margin: 20px 0 64px;
+}
+
+.curator-img img {
+    width: max(11.4vw, 103.8px);
+    margin-right: 32px;
+}
+
+.curator-content {
+    margin-bottom: 32px;
+}
+
+.curator-content h4:first-child {
+    margin-top: 0;
+}
+
+.faq-wrap {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.faq-item {
+    color: #373737;
+    font-size: 17px;
+}
+
+button.faq-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Fira Sans', 'Noto Sans TC', sans-serif;
+    width: 100%;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 10px 8px;
+    color: #373737;
+    font-weight: 500;
+    text-align: start;
+    background-color: transparent;
+}
+
+.top-arr {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.top-arr::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 30%;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg);
+}
+
+.faq-item:first-child .faq-title {
+    border-top: 0;
+}
+
+
+/*.faq-item:last-child .faq-title {
+    border-bottom: 0;
+} */
+
+b {
+    font-weight: 500;
+}
+
+.faq-title p {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.faq-content {
+    display: none;
+    padding: 16px 0 36px 24px;
+    font-weight: 400;
+}
+
+.faq-content li {
+    line-height: 1.75;
+}
+
+.faq-content img {
+    width: 100%;
+}
+
+.faq-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:1440px) {
+    .about-right p {
+        font-size: 16px;
+    }
+    .about-left .title-ch {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .about-left .title-en,
+    h4 {
+        font-size: 18.4px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about {
+        flex-wrap: wrap;
+    }
+    .about-left,
+    .about-right {
+        flex: auto;
+        width: 100%;
+    }
+    .about-left {
+        margin: 0 0 32px 0;
+    }
+    .avator-item {
+        width: 100%;
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+    .avator-img {
+        width: max(29.68vw, 120px);
+    }
+    .curator {
+        flex-wrap: wrap;
+        margin: 16px 0 0;
+    }
+    .curator-img img {
+        width: 100%;
+        margin: 0 0 32px;
+    }
+    .curator-content {
+        padding-left: 32px;
+        margin-bottom: 16px;
+    }
+}

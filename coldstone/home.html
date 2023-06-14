@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./head-end.css">
+
+
+    <title s>COLD STONE </title>
+    <style>
+        /* ----banner---- */
+        
+        .activities {
+            max-width: 1838px;
+            width: 100%;
+        }
+        
+        .activities img {
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        /* ----news---- */
+        
+        .news {
+            max-width: 1576px;
+            width: 100%;
+            margin-bottom: 45px;
+        }
+        
+        .title {
+            text-align: center;
+            padding: 40px 0 60px 0;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        
+        .m-title {
+            font-size: 20px;
+            font-weight: bolder;
+            letter-spacing: 1px
+        }
+        
+        .b-title {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .b-title img {
+            width: 40px;
+            height: 40px;
+            margin: 0 9px;
+        }
+        /* ----輪播圖---- */
+        
+        .a-day {
+            text-align: center;
+            padding-bottom: 75px;
+        }
+        
+        .a-day a {
+            text-decoration: none;
+        }
+        
+        .day {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ce2b13;
+            margin-top: 30px;
+            margin-bottom: 6px;
+        }
+        
+        .info {
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
+        
+        .carousel-item {
+            width: 100%;
+        }
+        
+        .carousel-1 {
+            display: inline-block;
+            width: 360px;
+            padding: 0 36px;
+            vertical-align: top;
+        }
+        
+        .carousel-1 img {
+            width: 290px;
+            height: 290px;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+        }
+        
+        .carousel-indicators {
+            margin-bottom: -66px;
+        }
+        /* ----menu---- */
+        
+        .menu {
+            background-color: #e3242b;
+        }
+        
+        .menu-1 {
+            max-width: 1576px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+        
+        .menu h1,
+        .menu p {
+            color: #FFF;
+        }
+        
+        .menu .carousel-1 {
+            width: 533px;
+            padding: 0;
+        }
+        
+        .menu .carousel-1 img {
+            margin: 0 auto;
+            width: 379px;
+            height: 379px;
+            border-radius: 10px;
+        }
+        
+        .menu .carousel-item.active {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .menu .day {
+            font-size: 24px;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        
+        .menu .info {
+            font-size: 20px;
+        }
+        
+        .menu .title {
+            padding: 46px 0 55px 0;
+        }
+        
+        .menu .carousel-indicators {
+            margin-bottom: -60px;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 6px;
+            height: 6px;
+            border-radius: 50px;
+            border-top: 0;
+            border-bottom: 0;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        /* ----store-recruit---- */
+        
+        .store-recruit {
+            max-width: 1704px;
+            width: 100%;
+        }
+        
+        .sr {
+            margin-top: 60px;
+            margin-bottom: 48px;
+        }
+        
+        .box {
+            width: 100%;
+            display: flex;
+            margin-bottom: 32px;
+        }
+        
+        .left {
+            width: 50%;
+        }
+        
+        .left img {
+            width: 100%;
+            border-radius: 10px 0 0 10px /10px 0 0 10px;
+        }
+        
+        .store {
+            padding-right: 4px;
+        }
+        
+        .recruit {
+            padding-left: 4px;
+        }
+        
+        .bg-store {
+            display: flex;
+            text-align: center;
+            width: 50%;
+            background-color: #e3242b;
+            border-radius: 0 10px 10px 0 /0 10px 10px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bg-recruit {
+            display: flex;
+            text-align: center;
+            width: 50%;
+            background-color: #ecc84d;
+            border-radius: 0 10px 10px 0 /0 10px 10px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bg-recruit img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .bg-store h1 {
+            color: #FFF;
+            padding-bottom: 6px;
+        }
+        
+        .bg-recruit h1 {
+            padding-bottom: 6px;
+        }
+        
+        .bg-store p {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .bg-recruit p {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        /* ----follow---- */
+        
+        .link-1 {
+            margin-bottom: 68px;
+        }
+        
+        .link-1 img {
+            width: 100%;
+        }
+        
+        .follow .title {
+            padding-top: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="line ">
+            <div class="l-line"></div>
+            <div class="r-line"></div>
+        </div>
+
+        <div class="container header">
+            <a class="navbar-brand" href="./home.html"><img src="./icon/header_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav-mid mx-auto ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./new/new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./product/product.html">商品情報</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./store/store.html">門市查詢</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./about/about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./member/member.html">會員訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right ">
+                    <div class="search ">
+                        <button class="s "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-search " viewBox="0 0 16 16 ">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z "/>
+                        </svg><div class="s-p ">Search</div></button>
+                    </div>
+                    <div class="demarcation "></div>
+                    <div class="top-icon ">
+                        <a href="# "><img src="./icon/line.png " alt="line "></a>
+                        <a href="# "><img src="./icon/facebook.png " alt="fb "></a>
+                        <a href="# "><img src="./icon/instagram.png " alt="ig "></a>
+                        <a href="# "><img src="./icon/mail.png " alt="contact "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="container activities">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="./img/a-1.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href=""><img src="./img/a-2.jpg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container news">
+            <div class="title">
+                <div class="b-title">
+                    <img src="./icon/ice-lr.png" alt="">
+                    <h1>NEWS</h1>
+                    <img src="./icon/ice-rr.png" alt="">
+                </div>
+                <p class="subtitle">最新消息</p>
+                <p class="m-title">獲取 COLD STONE 優惠快訊及活動</p>
+            </div>
+
+            <div class=" a-day">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-1">
+                                <img src="./img/20211001_093013_ZKEAK.png" class="d-block " alt="...">
+                                <p class="day">2021 SEP. 24</p>
+                                <p class="info">居家防疫首選 沁涼【酷聖石歡樂禮盒】限量登場</p>
+                            </div>
+                            <div class="carousel-1">
+                                <img src="./img/20211001_093013_ZKEAK.png" class="d-block " alt="...">
+                                <p class="day">2021 SEP. 07</p>
+                                <p class="info">爆汁夏日！首推『楊枝甘露』尬『西瓜』冰！沁涼登場</p>
+                            </div>
+                            <div class="carousel-1">
+                                <img src="./img/20211001_093013_ZKEAK.png" class="d-block " alt="...">
+                                <p class="day">2021 SEP. 17</p>
+                                <p class="info">【活動調整公告】</p>
+                            </div>
+                            <div class="carousel-1">
+                                <img src="./img/20211001_093013_ZKEAK.png" class="d-block " alt="...">
+                                <p class="day">2021 SEP. 17</p>
+                                <p class="info">【活動調整公告】</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-lr">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu">
+            <div class="container menu-1">
+                <div class="title">
+                    <div class="b-title">
+                        <img src="./icon/ice-lw.png" alt="">
+                        <h1>MENU</h1>
+                        <img src="./icon/ice-rw.png" alt="">
+                    </div>
+                    <p class="subtitle">商品情報</p>
+                    <p class="m-title">探索 COLD STONE 多樣冰淇淋體驗</p>
+                </div>
+
+                <div class=" a-day">
+                    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-1">
+                                    <img src="./img/menu-img-1.jpg" class="d-block " alt="...">
+                                    <p class="day">Ice Cream Cake</p>
+                                    <p class="info">冰淇淋蛋糕</p>
+                                </div>
+                                <div class="carousel-1">
+                                    <img src="./img/menu-img-2.jpg" class="d-block " alt="...">
+                                    <p class="day">Ice Cream</p>
+                                    <p class="info">冰淇淋</p>
+                                </div>
+                                <div class="carousel-1">
+                                    <img src="./img/menu-img-3.jpg" class="d-block " alt="...">
+                                    <p class="day">Drinks</p>
+                                    <p class="info">飲料</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="button-lr">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container store-recruit">
+            <div class="row sr">
+                <div class="col-12 col-md-6 ">
+                    <div class="box store">
+                        <div class="left">
+                            <img src="./img/store.jpg" alt="store">
+                        </div>
+                        <div class="bg-store">
+                            <img src="./icon/location.png" alt="location">
+                            <h1>STORE</h1>
+                            <p>找尋門市據點</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="box recruit">
+                        <div class="left">
+                            <img src="./img/recruit.jpg" alt="recruit">
+                        </div>
+                        <div class="bg-recruit">
+                            <img src="./icon/recruit-icon.jpg" alt="recruit-icon">
+                            <h1>RECRUIT</h1>
+                            <p>成為我們的歡樂夥伴</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container follow">
+            <div class="title">
+                <div class="b-title">
+                    <img src="./icon/ice-lr.png" alt="">
+                    <h1>FOLLOW US</h1>
+                    <img src="./icon/ice-rr.png" alt="">
+                </div>
+                <p class="m-title">與你分享 COLD STONE 的歡樂生活</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="link-1">
+                        <a href="#"><img src="./follow_img/line_desktop.jpg" alt="line"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="link-1">
+                        <a href="#"><img src="./follow_img/fb_desktop.jpg" alt="fb"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="link-1">
+                        <a href="#"><img src="./follow_img/member_desktop.jpg" alt="m"></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="footer ">
+            <div class="container ">
+
+                <div class="footer-left">
+                    <div class="up-p ">
+                        <p class="tel-title ">酷聖石冰淇淋 歡樂服務專線</p>
+                        <p class="tel ">0800-001-677</p>
+                    </div>
+                    <div class="down-p ">
+                        <p class="copyright">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+                        </p>
+                        <div> <a href="# ">隱私權政策</a>
+                            <a href="# ">聯絡我們</a></div>
+
+                    </div>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="../home.html"><img class="logo-img " src="./icon/footer_logo.png " alt="logo "></a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r-link ">
+                        <div class="btn-link ">
+                            <button type="button " class="btn btn-outline-light "><a href="# ">冰淇淋教室</a></button>
+                            <button type="button " class="btn btn-outline-light "><a href="# ">禮券專區</a></button>
+                        </div>
+                        <div class="follow-us ">
+                            <p>FOLLOW US</p>
+                            <a href="# "><img src="./icon/f-fb.png " alt="fb "></a>
+                            <a href="# "><img src="./icon/f-ig.png " alt="ig "></a>
+                            <a href="# "><img src="./icon/f-line.png " alt="line "></a>
+                            <a href="# "><img src="./icon/f-location.png " alt="f-location "></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

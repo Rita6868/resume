@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../head-end.css">
+    <link rel="stylesheet" href="../product.css">
+
+
+
+    <title s>COLD STONE </title>
+    <style>
+        /* ----主體---- */
+        
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        /* ----步驟主頁內容---- */
+        
+        .seasonal-banner {
+            position: relative;
+        }
+        
+        .seasonal-banner img {
+            width: 100%;
+        }
+        
+        .share-icon {
+            display: flex;
+            right: 145px;
+            bottom: 40px;
+            position: absolute;
+        }
+        
+        .share {
+            display: flex;
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+        }
+        
+        .share svg {
+            margin-right: 10px;
+        }
+        
+        .share-icon img {
+            padding-left: 15px;
+        }
+        
+        .step-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fce9e9;
+            width: 100%;
+            padding: 50px 85px;
+        }
+        /* ----口味種類---- */
+        
+        .food-menu {
+            max-width: 1520px;
+            width: 100%;
+        }
+        
+        .food-item ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .food {
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+            margin: 30px 15px;
+        }
+        
+        .food-img:hover {
+            border-color: #fec400;
+        }
+        
+        .food a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .food:hover .food-img {
+            border-color: #fec400;
+        }
+        
+        .food:hover a {
+            color: #fec400;
+        }
+        
+        .food h3 {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Noto Sans TC';
+        }
+        
+        .food p {
+            font-size: 16px;
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+        }
+        /* ----口味圖片---- */
+        
+        .food-img {
+            background-color: #FFF;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            border: 2px solid #FFF;
+            padding: 20px;
+        }
+        
+        .food img {
+            width: 100%;
+        }
+        /* ----商品標籤icon---- */
+        
+        .new-p {
+            line-height: 44px;
+            width: 44px;
+            height: 44px;
+            background-color: #e9b503;
+            color: #fff;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        
+        .best-p {
+            line-height: 44px;
+            width: 44px;
+            height: 44px;
+            background-color: #e3242b;
+            color: #fff;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        /* ----返回上一頁Back---- */
+        
+        .back {
+            margin-top: 25px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .back a {
+            text-decoration: none;
+        }
+        
+        .back p {
+            color: #e0a92f;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .back-btn {
+            width: 35px;
+            height: 35px;
+            background-color: #e0a92f;
+            border-radius: 50px;
+            position: relative;
+        }
+        
+        .back-btn::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            transform: rotate(45deg);
+            top: 35%;
+            left: 42%;
+        }
+        
+        @media screen and (max-width: 980px) {
+            .food-item {
+                flex-direction: column;
+            }
+            .food-title {
+                margin-top: 50px;
+                margin-right: 0;
+            }
+            .food {
+                max-width: calc(50% - 20px);
+                margin: 30px 10px;
+            }
+            .size-item {
+                width: 50%;
+                padding: 15px 0;
+            }
+            .size-convert {
+                text-align: center;
+                padding: 0;
+            }
+            .step-2 {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .box {
+                flex-direction: column;
+            }
+            .p-left,
+            .p-right {
+                width: 100%;
+            }
+            .p-right {
+                padding: 30px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="line ">
+            <div class="l-line"></div>
+            <div class="r-line"></div>
+        </div>
+
+        <div class="container header">
+            <a class="navbar-brand" href="../home.html"><img src="../icon/header_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav-mid mx-auto ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../new/new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./product.html">商品情報</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../store/store.html">門市查詢</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../about/about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../member/member.html">會員訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right ">
+                    <div class="search ">
+                        <button class="s "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-search " viewBox="0 0 16 16 ">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z "/>
+                        </svg><div class="s-p ">Search</div></button>
+                    </div>
+                    <div class="demarcation "></div>
+                    <div class="top-icon ">
+                        <a href="# "><img src="../icon/line.png " alt="line "></a>
+                        <a href="# "><img src="../icon/facebook.png " alt="fb "></a>
+                        <a href="# "><img src="../icon/instagram.png " alt="ig "></a>
+                        <a href="# "><img src="../icon/mail.png " alt="contact "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="banner-bg">
+            <div class="container">
+
+                <div class="col-12">
+                    <div class="banner-title">
+                        <div class="top-title">
+                            <img src="../icon/ice-lw.png" alt="ice-icon">
+                            <h1>Seasonal 季節限定</h1>
+                            <img src="../icon/ice-rw.png" alt="ice-icon">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="navbar navbar-expand-xl navbar-light subnav">
+            <div class="container">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        選擇商品分類
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./seasonal.html">季節限定</a></li>
+                        <li>
+                            <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                冰淇淋</a>
+
+                            <ul class="collapse" id="collapseExample">
+                                <li><a href="./ice-1.html">經典冰淇淋</a></li>
+                                <li><a href="./ice-2.html">自創冰淇淋</a></li>
+                                <li><a href="./ice-2.html#Double-ball">雙球冰淇淋</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="dropdown-item" href="./ice-cake.html">冰淇淋蛋糕</a></li>
+                        <li><a class="dropdown-item" href="./drink.html">飲料</a></li>
+                        <li><a class="dropdown-item" href="./product-others.html">限定商品</a></li>
+                        <li><a class="dropdown-item" href="./product-gift.html">禮品專區</a></li>
+
+
+                    </ul>
+                </div>
+
+                <ul class="subnav-group">
+                    <li class="subnav-item">
+                        <a class="product-href" href="./seasonal.html">
+                            <div class="l-img">
+                                <img src="./icon/product01_icon_white.png" alt="icon">
+                            </div>
+                            <h2>季節限定</h2>
+                        </a>
+                        <div class="sub-line"></div>
+                    </li>
+
+                    <li class="subnav-item">
+                        <div class="l-img">
+                            <img src="./icon/product02_icon_white.png" alt="icon">
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">冰淇淋
+                                
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
+                                <li>
+                                    <a class="product-href" href="./ice-1.html"><button class="dropdown-item" type="button">經典冰淇淋</button></a>
+                                </li>
+                                <li><a class="product-href" href="./ice-2.html"><button class="dropdown-item" type="button">自創冰淇淋</button></a></li>
+                                <li><a class="product-href" href="./ice-2.html#Double-ball"><button class="dropdown-item" type="button">雙球冰淇淋</button></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-line"></div>
+                    </li>
+
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="./ice-cake.html">
+                            <div class="l-img">
+                                <img src="./icon/product03_icon_white.png" alt="icon">
+                            </div>
+                            <h2>冰淇淋蛋糕</h2>
+
+                        </a>
+                        <div class="sub-line"></div>
+                    </li>
+                    <li class="subnav-item">
+                        <a class="product-href" href="./drink.html">
+                            <div class="l-img">
+                                <img src="./icon/product04_icon_white.png" alt="icon">
+                            </div>
+                            <h2>飲料</h2>
+
+                        </a>
+                        <div class="sub-line"></div>
+                    </li>
+                    <li class="subnav-item">
+                        <a class="product-href" href="./product-others.html">
+                            <div class="l-img">
+                                <img src="./icon/product05_icon_white.png" alt="icon">
+                            </div>
+                            <h2>限定商品</h2>
+
+
+                        </a>
+                        <div class="sub-line"></div>
+                    </li>
+                    <li class="subnav-item">
+                        <a class="product-href" href="./product-gift.html">
+                            <div class="l-img">
+                                <img src="./icon/product06_icon_white.png" alt="icon">
+                            </div>
+                            <h2>禮券專區</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="seasonal-banner">
+            <img src="./img/pro_seasonal_20211101_kv_pc.jpg" alt="banner">
+
+
+
+            <div class="share-icon">
+                <div class="share"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                            </svg>share to</div>
+                <a href="# "><img src="../icon/line.png " alt="line "></a>
+                <a href="# "><img src="../icon/facebook.png " alt="fb "></a>
+
+                <a href="# "><img src="../icon/mail.png " alt="contact "></a>
+            </div>
+        </div>
+
+
+
+        <div class="step-2">
+            <ul class="food-menu">
+                <li class="food-item">
+                    <ul>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP01.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>花生牛奶冰心蛋糕</h3>
+                                <p>Peanut Butter Milk Ice Cream Cake Sandwich</p>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP02.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>雪之北海道牛奶酷樂杯</h3>
+                                <p>Hokkaido Milk Ice Cream Cup</p>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP03.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>耶誕濃巧克【11/5新上市】</h3>
+                                <p>Xmas Dark Choco</p>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP04.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>耶誕紅絲絨【11/5新上市】</h3>
+                                <p>Xmas Red Velvet</p>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP05.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>耶誕紅脆餅【11/5新上市】</h3>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="#">
+                                <div class="food-img"><img src="./seasonal-img/LP06.jpg" alt="ice">
+                                    <div class="new-p">NEW</div>
+                                </div>
+                                <h3>耶誕紅甜筒【11/5新上市】</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="back">
+                <a href="./product.html">
+                    <div class="back-btn"> </div>
+                    <p>Back</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer ">
+            <div class="container ">
+
+                <div class="footer-left">
+                    <div class="up-p ">
+                        <p class="tel-title ">酷聖石冰淇淋 歡樂服務專線</p>
+                        <p class="tel ">0800-001-677</p>
+                    </div>
+                    <div class="down-p ">
+                        <p class="copyright">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+                        </p>
+                        <div> <a href="# ">隱私權政策</a>
+                            <a href="# ">聯絡我們</a></div>
+
+                    </div>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="../home.html"><img class="logo-img " src="../icon/footer_logo.png " alt="logo "></a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r-link ">
+                        <div class="btn-link ">
+                            <button type="button " class="btn btn-outline-light "><a href="# ">冰淇淋教室</a></button>
+                            <button type="button " class="btn btn-outline-light "><a href="# ">禮券專區</a></button>
+                        </div>
+                        <div class="follow-us ">
+                            <p>FOLLOW US</p>
+                            <a href="# "><img src="../icon/f-fb.png " alt="fb "></a>
+                            <a href="# "><img src="../icon/f-ig.png " alt="ig "></a>
+                            <a href="# "><img src="../icon/f-line.png " alt="line "></a>
+                            <a href="# "><img src="../icon/f-location.png " alt="f-location "></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

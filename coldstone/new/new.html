@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../head-end.css">
+    <link rel="stylesheet" href="../product.css">
+
+
+
+    <title s>COLD STONE </title>
+    <style>
+        /* ----主體---- */
+        
+        .p_main {
+            /* display: flex; */
+            max-width: 1500px;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 60px;
+        }
+        /* ----訊息---- */
+        
+        .p_main ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .new-item {
+            display: flex;
+            max-width: 245px;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 65px;
+            padding: 65px 0;
+        }
+        
+        .new-item a {
+            text-decoration: none;
+        }
+        
+        .new-img {
+            border-radius: 125px;
+            overflow: hidden;
+            margin-bottom: 52px;
+        }
+        
+        .new-img img {
+            width: 100%;
+        }
+        
+        .new-img img:hover {
+            transition: .6s;
+            transform: scale(1.1);
+        }
+        
+        .new-subtitle {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        
+        .new-date {
+            color: #e3242b;
+            font-size: 16px;
+            font-weight: bold;
+            padding-right: 15px;
+        }
+        
+        .new-sort {
+            color: rgb(143, 143, 143);
+        }
+        
+        .new-title a {
+            display: flex;
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            /* --思源黑體-- */
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+        }
+        
+        .more-btn {
+            text-align: center;
+            width: 100%;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 99px;
+        }
+        
+        .more-btn img {
+            margin-bottom: 15px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .btn-group {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .subnav-group {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 960px) {
+            .p-right {
+                order: 1;
+            }
+            .p_main {
+                padding: 0 25px;
+                ;
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+            }
+            .p-right,
+            .p-left {
+                width: 100%;
+            }
+            .product-bg {
+                position: absolute;
+                height: 100%;
+            }
+            .p-text {
+                position: relative;
+                padding: 30px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="line ">
+            <div class="l-line"></div>
+            <div class="r-line"></div>
+        </div>
+
+        <div class="container header">
+            <a class="navbar-brand" href="../home.html"><img src="../icon/header_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav-mid mx-auto ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../product/product.html">商品情報</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../store/store.html">門市查詢</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../about/about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../member/member.html">會員訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right ">
+                    <div class="search ">
+                        <button class="s "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-search " viewBox="0 0 16 16 ">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z "/>
+                        </svg><div class="s-p ">Search</div></button>
+                    </div>
+                    <div class="demarcation "></div>
+                    <div class="top-icon ">
+                        <a href="# "><img src="../icon/line.png " alt="line "></a>
+                        <a href="# "><img src="../icon/facebook.png " alt="fb "></a>
+                        <a href="# "><img src="../icon/instagram.png " alt="ig "></a>
+                        <a href="# "><img src="../icon/mail.png " alt="contact "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="banner-bg">
+            <div class="container">
+
+                <div class="col-12">
+                    <div class="banner-title">
+                        <div class="top-title">
+                            <img src="../icon/ice-lw.png" alt="ice-icon">
+                            <h1>NEWS最新消息</h1>
+                            <img src="../icon/ice-rw.png" alt="ice-icon">
+                        </div>
+                        <div class="down-title">
+                            <p>獲取 COLD STONE 優惠快訊及活動</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="navbar navbar-expand-xl navbar-light subnav">
+            <div class="container">
+                <!-- ----手機板內頁導覽列---- -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        選擇商品分類
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./new.html">所有訊息</a></li>
+                        <li><a class="dropdown-item" href="#">門市活動</a></li>
+                        <li><a class="dropdown-item" href="#">冰淇淋教室</a></li>
+                        <li><a class="dropdown-item" href="#">其他資訊</a></li>
+                        <li><a class="dropdown-item" href="#">媒體專區</a></li>
+                        <li><a class="dropdown-item" href="#">外送專區</a></li>
+                    </ul>
+                </div>
+                <!-- ----電腦版內頁導覽列---- -->
+
+                <ul class="subnav-group">
+                    <li class="subnav-item">
+                        <a class="product-href" href="./new.html">
+                            <div class="l-img">
+
+                                <img src="./icon/icon1.png" alt="icon">
+                            </div>
+                            <h2>所有訊息</h2>
+                        </a>
+                        <div class="sub-line"></div>
+                    </li>
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="#">
+                            <div class="l-img">
+                                <img src="./icon/icon2.png" alt="icon">
+                            </div>
+                            <h2>門市活動</h2>
+                        </a>
+
+                        <div class="sub-line"></div>
+
+                    </li>
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="#">
+                            <div class="l-img">
+                                <img src="./icon/icon3.png" alt="icon">
+                            </div>
+                            <h2>冰淇淋教室</h2>
+                        </a>
+
+                        <div class="sub-line"></div>
+
+                    </li>
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="#">
+                            <div class="l-img">
+                                <img src="./icon/icon4.png" alt="icon">
+                            </div>
+                            <h2>其他資訊</h2>
+                        </a>
+
+                        <div class="sub-line"></div>
+
+                    </li>
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="#">
+                            <div class="l-img">
+                                <img src="./icon/icon5.png" alt="icon">
+                            </div>
+                            <h2>媒體專區</h2>
+                        </a>
+
+                        <div class="sub-line"></div>
+
+                    </li>
+
+                    <li class="subnav-item">
+                        <a class="product-href" href="#">
+                            <div class="l-img">
+                                <img src="./icon/icon6.png" alt="icon">
+                            </div>
+                            <h2>外送專區</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ----內頁---- -->
+        <div class="container p_main">
+            <!-- beforebegin -->
+            <ul class="new-warp">
+
+                <!-- afterbegin -->
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_1.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 NOV. 03</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">【11/5上市】耶誕奢華風！首推「紅絲絨冰淇淋」「4倍爆濃」巧克力冰、「耶誕紅脆餅」</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 NOV. 03</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">電子菜單</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 NOV. 01</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">COLD STONE 振興5倍券  加！倍！送！【紙本/數位皆可用】最多變6倍</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 OCT. 28</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">官網升級公告</a></div>
+                </li>
+                <!-- --------------------------------- -->
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_3.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 OCT. 18</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">『雪之北海道牛奶酷樂杯』 加碼翻玩傳統美味推『花生牛奶冰心蛋糕』</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 SEP. 24</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">居家防疫首選 沁涼【酷聖石歡樂禮盒】限量登場</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 SEP. 01</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">歡慶Icash Pay與OPEN錢包支付上線</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_4.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 AUG. 31</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">COLD STONE冰淇淋外送到府好便利</a></div>
+                </li>
+
+                <!-- --------------------------------- -->
+                <!-- beforeend -->
+                <!-- <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 AUG. 31</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">2021年 icash卡友優惠</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_5.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 12</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">【7-ELEVEN獨家販售】冰涼酷樂杯，讓你Cool一夏</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_6.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 07</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">跨界合作『角落小夥伴-蜥蜴』冰淇淋蛋糕！超萌登場！</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_7.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 01</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">冰淇淋DIY專區</a></div>
+                </li>
+
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JAN. 13</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">COLD STONE人才招募</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_8.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 01</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">歡慶12週年 <br> 木曜4超玩 x COLD STONE</a></div>
+                </li> -->
+
+
+            </ul>
+            <!-- afterend -->
+            <div class="more-btn">
+                <img src="../icon/plus.jpg" alt="plus">
+                <p>MORE</p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="footer ">
+            <div class="container ">
+
+                <div class="footer-left">
+                    <div class="up-p ">
+                        <p class="tel-title ">酷聖石冰淇淋 歡樂服務專線</p>
+                        <p class="tel ">0800-001-677</p>
+                    </div>
+                    <div class="down-p ">
+                        <p class="copyright">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+                        </p>
+                        <div> <a href="# ">隱私權政策</a>
+                            <a href="# ">聯絡我們</a></div>
+
+                    </div>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="../home.html"><img class="logo-img " src="../icon/footer_logo.png " alt="logo "></a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r-link ">
+                        <div class="btn-link ">
+                            <button type="button " class="btn btn-outline-light "><a href="# ">冰淇淋教室</a></button>
+                            <button type="button " class="btn btn-outline-light "><a href="# ">禮券專區</a></button>
+                        </div>
+                        <div class="follow-us ">
+                            <p>FOLLOW US</p>
+                            <a href="# "><img src="../icon/f-fb.png " alt="fb "></a>
+                            <a href="# "><img src="../icon/f-ig.png " alt="ig "></a>
+                            <a href="# "><img src="../icon/f-line.png " alt="line "></a>
+                            <a href="# "><img src="../icon/f-location.png " alt="f-location "></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+    <script>
+        var moreBtn = document.getElementsByClassName("more-btn")[0];
+        var newWarp = document.getElementsByClassName("new-warp")[0];
+
+        moreBtn.addEventListener('click', function() {
+
+            newWarp.insertAdjacentHTML(`beforeend`, ` <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 AUG. 31</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">2021年 icash卡友優惠</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_5.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 12</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">【7-ELEVEN獨家販售】冰涼酷樂杯，讓你Cool一夏</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_6.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 07</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">跨界合作『角落小夥伴-蜥蜴』冰淇淋蛋糕！超萌登場！</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_7.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 01</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">冰淇淋DIY專區</a></div>
+                </li>
+
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_2.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JAN. 13</p>
+                        <p class="new-sort">門市活動</p>
+                    </div>
+                    <div class="new-title"><a href="#">COLD STONE人才招募</a></div>
+                </li>
+
+                <li class="new-item">
+                    <div class="new-img">
+                        <a href="#"><img src="./img/news_8.png" alt="new-img"></a>
+                    </div>
+                    <div class="new-subtitle">
+                        <p class="new-date">2021 JUL. 01</p>
+                        <p class="new-sort">其他資訊</p>
+                    </div>
+                    <div class="new-title"><a href="#">歡慶12週年 <br> 木曜4超玩 x COLD STONE</a></div>
+                </li>`);
+
+            moreBtn.style.display = "none"
+        });
+
+        console.log("moreBtn", moreBtn);
+    </script>
+
+</body>
+
+</html>

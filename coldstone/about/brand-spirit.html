@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../head-end.css">
+    <link rel="stylesheet" href="../product.css">
+
+
+
+    <title s>COLD STONE </title>
+    <style>
+        /* ----導覽列陰影---- */
+        
+        .navbar-light {
+            box-shadow: 0 5px 12px #eee;
+        }
+        /* ----主體---- */
+        
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .head-title {
+            margin: 110px 0 60px 0;
+            text-align: center;
+            color: #e60012;
+        }
+        
+        h1 {
+            font-size: 30px;
+            margin-bottom: 3px;
+        }
+        
+        .head-subtitle {
+            max-width: 736px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #000;
+            font-weight: bold;
+            font-family: 'Noto Sans TC';
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .subtitle-text {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Noto Sans TC';
+            letter-spacing: 0.4px;
+        }
+        
+        .box {
+            display: flex;
+            background-color: #FBE9E7;
+            max-width: 1330px;
+            width: 100%;
+            margin: 65px auto;
+            align-items: center;
+        }
+        
+        .b-left,
+        .b-right {
+            width: 50%;
+        }
+        
+        .b-left img {
+            width: 100%;
+        }
+        
+        .b-right {
+            padding: 0 70px;
+        }
+        
+        .b-right h2 {
+            text-align: left;
+        }
+        
+        .b-right .subtitle-text {
+            text-align: left;
+            padding-top: 10px;
+        }
+        /* ----box2---- */
+        
+        .box-2 {
+            margin-bottom: 60px;
+        }
+        
+        .box-2 h2 {
+            margin-bottom: 45px;
+            padding: 0 60px;
+        }
+        
+        .box-2-content {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .box-2-item {
+            display: flex;
+            max-width: 328px;
+            width: 100%;
+            background-color: #FDF8E5;
+            border-radius: 10px;
+            margin: 0 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        
+        .box-2-item img {
+            width: 204px;
+            border-radius: 200px;
+            margin: 35px 0;
+        }
+        
+        .box-2-item p {
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Noto Sans TC';
+            color: #333;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+        
+        .box-2-top {
+            text-align: center;
+        }
+        
+        .box-2-bottom {
+            width: 100%;
+        }
+        
+        .number {
+            margin: 0 auto;
+            margin-bottom: 35px;
+            width: 30px;
+            height: 30px;
+            background-color: #e8ba00;
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        .number p {
+            position: absolute;
+            font-family: inherit;
+            font-size: 30px;
+            color: #000;
+            font-weight: bold;
+            top: -8px;
+        }
+        
+        .box-2 .line {
+            margin: 0 auto;
+            width: 156px;
+            height: 5px;
+            background-color: #e60012;
+        }
+        /* ----box3---- */
+        
+        .box-3 {
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 60px 0;
+        }
+        
+        .box-3 h2 {
+            margin-bottom: 75px;
+        }
+        
+        .box-3-item {
+            display: flex;
+            max-width: 358px;
+            width: 100%;
+            padding: 0 30px;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        
+        .box-3-item::after {
+            position: absolute;
+            content: '';
+            height: 215px;
+            width: 1px;
+            background-color: #FFF;
+            right: 0;
+            bottom: 28%;
+        }
+        
+        .box-3-item h3 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .h3-ch {
+            font-family: 'Noto Sans TC';
+            margin-bottom: 35px;
+        }
+        
+        .box-3-item p {
+            font-size: 18px;
+            text-align: justify;
+            text-align-last: center;
+            font-family: 'Noto Sans TC';
+            color: #333;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+        
+        .box-3-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #e60012;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 65px;
+            margin-bottom: 30px;
+        }
+        /* ----返回上一頁Back---- */
+        
+        .back {
+            display: flex;
+            background-color: #FFF;
+            width: 100%;
+            justify-content: center;
+            margin: 85px 0;
+        }
+        
+        .back a {
+            text-decoration: none;
+        }
+        
+        .back p {
+            color: #e0a92f;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .back-btn {
+            width: 35px;
+            height: 35px;
+            background-color: #e0a92f;
+            border-radius: 50px;
+            position: relative;
+        }
+        
+        .back-btn::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            transform: rotate(45deg);
+            top: 35%;
+            left: 42%;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .menu-h {
+                flex-direction: column;
+            }
+            .b-left {
+                width: 40%;
+            }
+            .b-right {
+                width: 60%;
+            }
+        }
+        
+        @media screen and (min-width: 1000px) {
+            .b-right br {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .box {
+                flex-direction: column;
+            }
+            .b-left,
+            .b-right {
+                width: 100%;
+            }
+            .head-subtitle .subtitle-text {
+                padding: 0 35px;
+            }
+            .b-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 25px;
+            }
+            .b-right h2 {
+                text-align: center!important;
+            }
+            .subtitle-text,
+            .box-2-item p {
+                text-align: justify!important;
+                text-align-last: center;
+            }
+            .box-2-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box-2-item {
+                max-width: 100%;
+            }
+            .box-2-item:not(:last-of-type) {
+                margin-bottom: 25px;
+            }
+            .box-3-item::after {
+                display: none;
+            }
+            .box-3-item {
+                max-width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="line ">
+            <div class="l-line"></div>
+            <div class="r-line"></div>
+        </div>
+
+        <div class="container header">
+            <a class="navbar-brand" href="../home.html"><img src="../icon/header_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav-mid mx-auto ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../new/new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../product/product.html">商品情報</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../store/store.html">門市查詢</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../member/member.html">會員訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right ">
+                    <div class="search ">
+                        <button class="s "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-search " viewBox="0 0 16 16 ">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z "/>
+                        </svg><div class="s-p ">Search</div></button>
+                    </div>
+                    <div class="demarcation "></div>
+                    <div class="top-icon ">
+                        <a href="# "><img src="../icon/line.png " alt="line "></a>
+                        <a href="# "><img src="../icon/facebook.png " alt="fb "></a>
+                        <a href="# "><img src="../icon/instagram.png " alt="ig "></a>
+                        <a href="# "><img src="../icon/mail.png " alt="contact "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="head-title">
+            <h1>BRAND SPIRIT</h1>
+            <h1>企業精神</h1>
+        </div>
+        <div class="head-subtitle">
+            <h2>創造歡樂體驗的冰淇淋專家</h2>
+            <p class="subtitle-text">COLD STONE 以提供顧客享用冰淇淋的歡樂體驗為宗旨，並藉由熱情及創意的營運模式，使人們感到幸福快樂，我們要成為最優質最專業及最受歡迎的冰淇淋品牌，引領食尚潮流！</p>
+        </div>
+        <div class="box">
+            <div class="b-left">
+                <img src="./img/spirit-img01.jpg" alt="img">
+            </div>
+            <div class="b-right">
+                <h2>風靡世界 創新與時尚 <br>全新概念冰淇淋體驗店</h2>
+                <p class="subtitle-text">源自於美國，憑著新鮮現作的優質冰淇淋，加上1200萬種的創新客製化口味，已讓 COLD STONE CREAMERY 被喻為是”世界上最無與倫比的冰淇淋體驗”與最受全球矚目的創新體驗服務。 </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <h2>COLD STONE 優質冰淇淋+豐富配料=1200萬種快樂滋味</h2>
+            <div class="box-2-content">
+                <div class="box-2-item">
+                    <div class="box-2-top"><img src="./img/spirit-img02.jpg" alt="img">
+                        <p>無與倫比的冰淇淋體驗，所呈現的不只是每位消費者心中完美的客製化冰淇淋，更特別的是在消費過程中所產生的深刻歡樂體驗。</p>
+                    </div>
+
+                    <div class="box-2-bottom">
+                        <div class="number">
+                            <p>01</p>
+                        </div>
+                        <div class="line"></div>
+
+                    </div>
+                </div>
+                <div class="box-2-item">
+                    <div class="box-2-top"><img src="./img/spirit-img03.jpg" alt="img">
+                        <p>成就完美冰淇淋的秘訣，在於客製化我們依顧客需求，在每日新鮮現拌的冰淇淋裡拌入豐富配料，從各式水果、堅果、布朗尼..等，透過特有-9度C低溫花崗岩石板上巧妙拌製出綿密扎實口感。</p>
+                    </div>
+                    <div class="box-2-bottom">
+                        <div class="number">
+                            <p>02</p>
+                        </div>
+                        <div class="line"></div>
+
+                    </div>
+                </div>
+                <div class="box-2-item">
+                    <div class="box-2-top"><img src="./img/spirit-img04.jpg" alt="img">
+                        <p>你將發現記憶裡那些不再新奇的冰淇淋口味，搭配不同口感與層次配料後，竟能創造出令人訝異的新風味，那無與倫比的香醇滋味，令人無法抗拒。</p>
+                    </div>
+                    <div class="box-2-bottom">
+                        <div class="number">
+                            <p>03</p>
+                        </div>
+                        <div class="line"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="box-3">
+            <h2>COLD STONE 品牌特色</h2>
+            <div class="box-2-content">
+                <div class="box-3-item">
+                    <div class="box-3-icon"><img src="./img/feature-icon01.png" alt="icon01"></div>
+                    <div class="box-3-top">
+                        <h3>Make Fresh</h3>
+                        <h3 class="h3-ch">新鮮現拌冰淇淋 & 手工脆餅</h3>
+                        <p>店內現拌美味冰淇淋，美式＋在地研發口味，口感綿密滑順；每一份「美味脆餅」都是由夥伴手工塑型、製作，還沒走到門市，遠處即撲鼻聞香的脆餅味，是搭配冰淇淋絕對不能少的最佳良伴！</p>
+                    </div>
+                </div>
+                <div class="box-3-item">
+                    <div class="box-3-icon"><img src="./img/feature-icon02.png" alt="icon01"></div>
+                    <div class="box-3-top">
+                        <h3>Personalized Ice Cream</h3>
+                        <h3 class="h3-ch">配料選擇多樣化</h3>
+                        <p>在 COLD STONE，你可大膽創作專屬的冰淇淋，先選擇冰淇淋口味再自由搭配如水果、堅果、餅乾到布朗尼等豐富配料，緊接交給夥伴幫您在特有的-9度C低溫花崗岩石板上，將新鮮現做的冰淇淋mix-in「拌入」各式各樣豐富配料，創造出全新且令人驚艷的風味！</p>
+                    </div>
+                </div>
+                <div class="box-3-item">
+                    <div class="box-3-icon"><img src="./img/feature-icon03.png" alt="icon01"></div>
+                    <div class="box-3-top">
+                        <h3>Make People Happy</h3>
+                        <h3 class="h3-ch">歡樂的消費體驗</h3>
+                        <p>COLD STONE 不只強調客製化冰淇淋，令人印象深刻的是夥伴在客人等候之餘與拌冰過程中「歡唱」表達對顧客的感謝，有時還會即興拋冰等表演，加上貼心服務，無時無刻創造快樂因子，快來享受 Mix & Fun 的歡樂冰淇淋樂趣吧！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <a href="./about.html">
+                <div class="back-btn"> </div>
+                <p>Back</p>
+            </a>
+        </div>
+        <div class="footer ">
+            <div class="container ">
+
+                <div class="footer-left">
+                    <div class="up-p ">
+                        <p class="tel-title ">酷聖石冰淇淋 歡樂服務專線</p>
+                        <p class="tel ">0800-001-677</p>
+                    </div>
+                    <div class="down-p ">
+                        <p class="copyright">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+                        </p>
+                        <div> <a href="# ">隱私權政策</a>
+                            <a href="# ">聯絡我們</a></div>
+
+                    </div>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="../home.html"><img class="logo-img " src="../icon/footer_logo.png " alt="logo "></a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r-link ">
+                        <div class="btn-link ">
+                            <button type="button " class="btn btn-outline-light "><a href="# ">冰淇淋教室</a></button>
+                            <button type="button " class="btn btn-outline-light "><a href="# ">禮券專區</a></button>
+                        </div>
+                        <div class="follow-us ">
+                            <p>FOLLOW US</p>
+                            <a href="# "><img src="../icon/f-fb.png " alt="fb "></a>
+                            <a href="# "><img src="../icon/f-ig.png " alt="ig "></a>
+                            <a href="# "><img src="../icon/f-line.png " alt="line "></a>
+                            <a href="# "><img src="../icon/f-location.png " alt="f-location "></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

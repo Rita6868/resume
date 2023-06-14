@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../head-end.css">
+    <link rel="stylesheet" href="../product.css">
+
+
+
+    <title s>COLD STONE </title>
+    <style>
+        /* ----主體---- */
+        
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main-bg {
+            background-image: url(./img/member-bg.jpg);
+            padding: 100px 0 80px 0;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        h2 {
+            font-size: 30px;
+            color: #e60012;
+            margin-bottom: 16px;
+            line-height: 44px;
+        }
+        
+        .box {
+            display: flex;
+            margin: 0 auto;
+            max-width: 1450px;
+            background-color: #fffbd2;
+            justify-content: center;
+            border-radius: 30px;
+            flex-direction: column;
+            padding: 0 13.2%;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .l-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .r-bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .title {
+            margin: 80px 0 55px 0;
+            font-size: 22px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1;
+        }
+        
+        h3 {
+            font-size: 25px;
+            color: #e60012;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+        
+        .icon-t {
+            display: flex;
+            font-size: 22px;
+            color: #da5467;
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+            align-items: center;
+        }
+        
+        .icon-t img {
+            margin-right: 15px;
+        }
+        
+        .point {
+            margin-bottom: 75px;
+            z-index: 1;
+        }
+        
+        .point p {
+            margin-left: 60px;
+            font-size: 18px;
+            /* font-weight: bold; */
+            font-family: 'Noto Sans TC';
+            margin-top: -4px;
+        }
+        
+        .t-line {
+            max-width: 855px;
+            height: 1px;
+            background-color: #eee9b2;
+            margin: 20px 0 20px 0;
+        }
+        
+        .note-list {
+            position: relative;
+            margin-left: 60px;
+            font-family: 'Noto Sans TC';
+            font-size: 18px;
+            line-height: 36px;
+        }
+        
+        .note-list::after {
+            position: absolute;
+            content: '';
+            left: -17px;
+            top: 19px;
+            width: 5px;
+            height: 5px;
+            background-color: #da5467;
+            border-radius: 10px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            margin-left: 60px;
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+            margin-top: 23px;
+            margin-bottom: 4.5px;
+        }
+        
+        .line-f {
+            margin-bottom: 90px;
+            z-index: 1;
+        }
+        
+        .line-f h3 {
+            font-size: 25px;
+            color: #3eb13a;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+        /* ----box2---- */
+        
+        .box-2 {
+            display: flex;
+            max-width: 1450px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 6px;
+        }
+        
+        .b-line {
+            display: flex;
+            max-width: calc(50% - 20px);
+            width: 100%;
+            background-color: #3eb13a;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 85px 0;
+            font-family: 'Noto Sans TC';
+            margin-right: 20px;
+        }
+        
+        .line-title img {
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        
+        .line-title {
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            font-size: 24px;
+            margin-bottom: 14px;
+            letter-spacing: 2px;
+        }
+        
+        .b-line p {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .btn-add {
+            background-color: #000;
+            padding: 15px 35px;
+            border-radius: 35px;
+            box-shadow: 2px 5px 12px #5e5e5e56;
+        }
+        
+        .btn-add img {
+            margin-right: 15px;
+        }
+        
+        .btn-add a {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 16px;
+        }
+        
+        .b-open {
+            display: flex;
+            max-width: calc(50% - 20px);
+            width: 100%;
+            background-color: #f39801;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Noto Sans TC';
+            margin-left: 20px;
+            padding: 0 7%;
+        }
+        
+        .b-open img {
+            margin-bottom: 15px;
+        }
+        
+        .b-open .btn-add {
+            padding: 16px 55px;
+        }
+        
+        .b-open img {
+            width: 100%;
+        }
+        
+        .b-open p {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #FFF;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .box {
+                padding: 0 5.5%;
+                background-color: transparent;
+                border-radius: 0;
+                position: static;
+            }
+            .box-2 {
+                flex-direction: column;
+                padding: 0 15px;
+            }
+            .b-line,
+            .b-open {
+                max-width: 100%;
+                margin: 0;
+            }
+            .b-line {
+                margin-bottom: 15px;
+                padding: 11% 0;
+                z-index: 1;
+            }
+            .b-open {
+                padding: 7.6% 13.5%;
+                text-align: center;
+                z-index: 1;
+            }
+            .main-bg {
+                background-image: none;
+                background-color: #fffbd2;
+                position: relative;
+                padding: 0 0 80px 0;
+            }
+        }
+        
+        @media screen and (min-width: 1120px) {
+            .b-open br {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 1120px) {
+            .b-open {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="line ">
+            <div class="l-line"></div>
+            <div class="r-line"></div>
+        </div>
+
+        <div class="container header">
+            <a class="navbar-brand" href="../home.html"><img src="../icon/header_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav-mid mx-auto ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../new/new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../product/product.html">商品情報</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../store/store.html">門市查詢</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../about/about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./member.html">會員訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right ">
+                    <div class="search ">
+                        <button class="s "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-search " viewBox="0 0 16 16 ">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z "/>
+                        </svg><div class="s-p ">Search</div></button>
+                    </div>
+                    <div class="demarcation "></div>
+                    <div class="top-icon ">
+                        <a href="# "><img src="../icon/line.png " alt="line "></a>
+                        <a href="# "><img src="../icon/facebook.png " alt="fb "></a>
+                        <a href="# "><img src="../icon/instagram.png " alt="ig "></a>
+                        <a href="# "><img src="../icon/mail.png " alt="contact "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="main-bg">
+            <div class="box">
+                <div class="title">
+                    <h2>EXCLUSIVE INFORMATION<br>獨享訊息</h2>
+                    <p>2021 下半年度</p>
+                </div>
+                <div class="point">
+                    <h3>OPEN POINT會員</h3>
+                    <ul>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">消費前出示會員條碼累點、兌點</div>
+                            <p>兌點1點=現抵1元，消費立即折抵更有感。</p>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">消週三買一送一</div>
+                            <p>週三點購冰淇淋，歡樂分享同size買一送一(價低者為贈送品項，脆餅/桶裝除外)</p>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">週六大 FUN 送</div>
+                            <p>周六點購中杯以上冰淇淋，歡樂分享同size買一送一(價低者為贈送品項，脆餅/桶裝除外)</p>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">冰淇淋蛋糕天天 9 折</div>
+                            <p>購買任一款冰淇淋蛋糕，天天享 9 折優惠</p>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <h4>注意事項：</h4>
+                            <ul>
+                                <li class="note-list">以上優惠內容至2021/12/31。</li>
+                                <li class="note-list">以上優惠內容與累兌點僅限門市現場消費，不適用外送平台；且優惠恕不能合併使用。</li>
+                                <li class="note-list">OPEN POINT詳細使用辦法請參考 OPEN POINT官網 點數累積以折扣後金額為主，並請於門市結帳前主動出示會員條碼累積。</li>
+                                <li class="note-list">酷聖石冰淇淋保留隨時變更、取消、終止本活動期間、內容及對活動之所有事宜做出最終解釋及決定之權利。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-f">
+                    <h3>LINE好友</h3>
+                    <ul>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">每月不定期抽免費冰淇淋</div>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">品牌獨家遊戲活動搶先</div>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">新品資訊搶先Get</div>
+                        </li>
+                        <div class="t-line"></div>
+                        <li>
+                            <div class="icon-t"><img src="./img/cream-icon.png" alt="icon">異業合作福利領好康</div>
+                        </li>
+                    </ul>
+                </div>
+                <img class="l-bg" src="./img/bg-pattern1.png" alt="l-bg">
+                <img class="r-bg" src="./img/bg-pattern2.png" alt="r-bg">
+            </div>
+            <div class="box-2">
+                <div class="b-line">
+                    <div class="line-title">
+                        <img src="./img/line-green.jpg" alt="icon"> 加入好友搶先獲得訊息
+                    </div>
+                    <p>酷聖石官方LINE，獨家優惠搶先領</p>
+                    <div class="btn-add">
+                        <a href="#"> <img src="./img/line-white.png" alt="btn-icon">加入好友</a>
+                    </div>
+                </div>
+                <div class="b-open"><img src="./img/openpoint-logo.png" alt="openpoint-logo">
+                    <p>加入集團會員享優惠，<br>消費前出示會員條碼累兌點</p>
+                    <div class="btn-add">
+                        <a href="#">加入會員</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer ">
+            <div class="container ">
+
+                <div class="footer-left">
+                    <div class="up-p ">
+                        <p class="tel-title ">酷聖石冰淇淋 歡樂服務專線</p>
+                        <p class="tel ">0800-001-677</p>
+                    </div>
+                    <div class="down-p ">
+                        <p class="copyright">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+                        </p>
+                        <div> <a href="# ">隱私權政策</a>
+                            <a href="# ">聯絡我們</a></div>
+
+                    </div>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="../home.html"><img class="logo-img " src="../icon/footer_logo.png " alt="logo "></a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r-link ">
+                        <div class="btn-link ">
+                            <button type="button " class="btn btn-outline-light "><a href="# ">冰淇淋教室</a></button>
+                            <button type="button " class="btn btn-outline-light "><a href="# ">禮券專區</a></button>
+                        </div>
+                        <div class="follow-us ">
+                            <p>FOLLOW US</p>
+                            <a href="# "><img src="../icon/f-fb.png " alt="fb "></a>
+                            <a href="# "><img src="../icon/f-ig.png " alt="ig "></a>
+                            <a href="# "><img src="../icon/f-line.png " alt="line "></a>
+                            <a href="# "><img src="../icon/f-location.png " alt="f-location "></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
